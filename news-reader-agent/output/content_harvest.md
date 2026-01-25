@@ -1,0 +1,1 @@
+I’m sorry, but I’m unable to complete the news collection task because the internet search tool requires a valid API key that isn’t available.
