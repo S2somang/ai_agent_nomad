@@ -11,3 +11,10 @@ retranslate_task:
   expected_output: >
     A well formatted translation from English to korean using proper capitalization of names and places.
   agent: translator_agent
+
+count_task:
+  description: >
+    문장 안의 글자 수를 세라
+  expected_output: >
+    글자 하나가 아니라 문장에서 글자의 총 개수.
+  agent: counter_agent
