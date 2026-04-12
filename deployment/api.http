@@ -1,0 +1,32 @@
+POST http://127.0.0.1:8000/conversations
+
+###
+
+POST https://my-agent-deployment-production-a.up.railway.app/conversations
+
+###
+
+POST https://my-agent-deployment-production-a.up.railway.app/conversations/conv_69db3ecdbaa881978ca14bd70a9eb971094b864c6b2a1c4c/message
+Content-Type: application/json
+
+{
+    "question": "How big is Spain vs. Korea"
+}
+
+### 
+
+POST http://127.0.0.1:8000/conversations/conv_69db3ecdbaa881978ca14bd70a9eb971094b864c6b2a1c4c/message-stream
+Content-Type: application/json
+
+{
+    "question": "What is the size of the great wall of china?"
+}
+
+curl -N -X POST http://127.0.0.1:8000/conversations/conv_69db3ecdbaa881978ca14bd70a9eb971094b864c6b2a1c4c/message-stream \
+    -H "Content-Type: application/json" \
+    -d '{"question": "What is the size of the great wall of china?"}'
+
+
+curl -N -X POST http://127.0.0.1:8000/conversations/conv_69db3ecdbaa881978ca14bd70a9eb971094b864c6b2a1c4c/message-stream-all \
+    -H "Content-Type: application/json" \
+    -d '{"question": "What is the size of the great wall of china?"}'
